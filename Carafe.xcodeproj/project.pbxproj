@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB20C852266AAF990084EAFE /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20C851266AAF990084EAFE /* SetupView.swift */; };
 		EB50BB58266AA42B00B09F75 /* Carafe WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EB50BB57266AA42B00B09F75 /* Carafe WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EB50BB5D266AA42E00B09F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB50BB5C266AA42E00B09F75 /* Assets.xcassets */; };
 		EB50BB64266AA42E00B09F75 /* Carafe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB50BB63266AA42E00B09F75 /* Carafe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EB50BB69266AA42E00B09F75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50BB68266AA42E00B09F75 /* ContentView.swift */; };
+		EB50BB69266AA42E00B09F75 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50BB68266AA42E00B09F75 /* HomeView.swift */; };
 		EB50BB6B266AA42E00B09F75 /* CarafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50BB6A266AA42E00B09F75 /* CarafeApp.swift */; };
 		EB50BB6D266AA42E00B09F75 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50BB6C266AA42E00B09F75 /* ComplicationController.swift */; };
 		EB50BB6F266AA42F00B09F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB50BB6E266AA42F00B09F75 /* Assets.xcassets */; };
 		EB50BB72266AA42F00B09F75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB50BB71266AA42F00B09F75 /* Preview Assets.xcassets */; };
+		EBAE3DCE266AB432006990E0 /* MethodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE3DCD266AB432006990E0 /* MethodModel.swift */; };
+		EBAE3DD9266AB638006990E0 /* BrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE3DD8266AB638006990E0 /* BrewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,17 +63,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EB20C851266AAF990084EAFE /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		EB50BB53266AA42B00B09F75 /* Carafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB50BB57266AA42B00B09F75 /* Carafe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carafe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB50BB5C266AA42E00B09F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB50BB5E266AA42E00B09F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB50BB63266AA42E00B09F75 /* Carafe WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Carafe WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB50BB68266AA42E00B09F75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB50BB68266AA42E00B09F75 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EB50BB6A266AA42E00B09F75 /* CarafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarafeApp.swift; sourceTree = "<group>"; };
 		EB50BB6C266AA42E00B09F75 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		EB50BB6E266AA42F00B09F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB50BB71266AA42F00B09F75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB50BB73266AA42F00B09F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBAE3DCD266AB432006990E0 /* MethodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodModel.swift; sourceTree = "<group>"; };
+		EBAE3DD8266AB638006990E0 /* BrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB20C850266AAF7C0084EAFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB50BB68266AA42E00B09F75 /* HomeView.swift */,
+				EB20C851266AAF990084EAFE /* SetupView.swift */,
+				EBAE3DD8266AB638006990E0 /* BrewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EB50BB4C266AA42B00B09F75 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +131,8 @@
 		EB50BB67266AA42E00B09F75 /* Carafe WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				EB50BB68266AA42E00B09F75 /* ContentView.swift */,
+				EBAE3DCC266AB424006990E0 /* Models */,
+				EB20C850266AAF7C0084EAFE /* Views */,
 				EB50BB6A266AA42E00B09F75 /* CarafeApp.swift */,
 				EB50BB6C266AA42E00B09F75 /* ComplicationController.swift */,
 				EB50BB6E266AA42F00B09F75 /* Assets.xcassets */,
@@ -131,6 +148,14 @@
 				EB50BB71266AA42F00B09F75 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EBAE3DCC266AB424006990E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBAE3DCD266AB432006990E0 /* MethodModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB50BB69266AA42E00B09F75 /* ContentView.swift in Sources */,
+				EB50BB69266AA42E00B09F75 /* HomeView.swift in Sources */,
 				EB50BB6B266AA42E00B09F75 /* CarafeApp.swift in Sources */,
+				EB20C852266AAF990084EAFE /* SetupView.swift in Sources */,
+				EBAE3DCE266AB432006990E0 /* MethodModel.swift in Sources */,
+				EBAE3DD9266AB638006990E0 /* BrewView.swift in Sources */,
 				EB50BB6D266AA42E00B09F75 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
