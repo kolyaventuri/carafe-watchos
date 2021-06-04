@@ -31,6 +31,11 @@ struct BrewView: View {
             currentWeight += (Double(totalWeight) * step.weightFactor) / Double(step.time)
         }
         
+        if (seconds > 0 && seconds <= 3) {
+            WKInterfaceDevice.current().play(.click)
+
+        }
+        
         if (seconds == 0) {
             return nextStep()
         }
