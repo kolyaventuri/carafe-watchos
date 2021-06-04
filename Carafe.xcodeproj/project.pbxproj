@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB50BB58266AA42B00B09F75 /* Carafe WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EB50BB57266AA42B00B09F75 /* Carafe WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB50BB5D266AA42E00B09F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB50BB5C266AA42E00B09F75 /* Assets.xcassets */; };
+		EB50BB64266AA42E00B09F75 /* Carafe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB50BB63266AA42E00B09F75 /* Carafe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB50BB69266AA42E00B09F75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50BB68266AA42E00B09F75 /* ContentView.swift */; };
+		EB50BB6B266AA42E00B09F75 /* CarafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50BB6A266AA42E00B09F75 /* CarafeApp.swift */; };
+		EB50BB6D266AA42E00B09F75 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50BB6C266AA42E00B09F75 /* ComplicationController.swift */; };
+		EB50BB6F266AA42F00B09F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB50BB6E266AA42F00B09F75 /* Assets.xcassets */; };
+		EB50BB72266AA42F00B09F75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB50BB71266AA42F00B09F75 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB50BB59266AA42B00B09F75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB50BB4D266AA42B00B09F75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB50BB56266AA42B00B09F75;
+			remoteInfo = "Carafe WatchKit App";
+		};
+		EB50BB65266AA42E00B09F75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB50BB4D266AA42B00B09F75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB50BB62266AA42E00B09F75;
+			remoteInfo = "Carafe WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB50BB79266AA42F00B09F75 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EB50BB64266AA42E00B09F75 /* Carafe WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB50BB7D266AA42F00B09F75 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EB50BB58266AA42B00B09F75 /* Carafe WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB50BB53266AA42B00B09F75 /* Carafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB50BB57266AA42B00B09F75 /* Carafe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carafe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB50BB5C266AA42E00B09F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB50BB5E266AA42E00B09F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB50BB63266AA42E00B09F75 /* Carafe WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Carafe WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB50BB68266AA42E00B09F75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB50BB6A266AA42E00B09F75 /* CarafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarafeApp.swift; sourceTree = "<group>"; };
+		EB50BB6C266AA42E00B09F75 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		EB50BB6E266AA42F00B09F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB50BB71266AA42F00B09F75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB50BB73266AA42F00B09F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB50BB60266AA42E00B09F75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB50BB4C266AA42B00B09F75 = {
+			isa = PBXGroup;
+			children = (
+				EB50BB5B266AA42B00B09F75 /* Carafe WatchKit App */,
+				EB50BB67266AA42E00B09F75 /* Carafe WatchKit Extension */,
+				EB50BB54266AA42B00B09F75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB50BB54266AA42B00B09F75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB50BB53266AA42B00B09F75 /* Carafe.app */,
+				EB50BB57266AA42B00B09F75 /* Carafe WatchKit App.app */,
+				EB50BB63266AA42E00B09F75 /* Carafe WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB50BB5B266AA42B00B09F75 /* Carafe WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EB50BB5C266AA42E00B09F75 /* Assets.xcassets */,
+				EB50BB5E266AA42E00B09F75 /* Info.plist */,
+			);
+			path = "Carafe WatchKit App";
+			sourceTree = "<group>";
+		};
+		EB50BB67266AA42E00B09F75 /* Carafe WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB50BB68266AA42E00B09F75 /* ContentView.swift */,
+				EB50BB6A266AA42E00B09F75 /* CarafeApp.swift */,
+				EB50BB6C266AA42E00B09F75 /* ComplicationController.swift */,
+				EB50BB6E266AA42F00B09F75 /* Assets.xcassets */,
+				EB50BB73266AA42F00B09F75 /* Info.plist */,
+				EB50BB70266AA42F00B09F75 /* Preview Content */,
+			);
+			path = "Carafe WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EB50BB70266AA42F00B09F75 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EB50BB71266AA42F00B09F75 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB50BB52266AA42B00B09F75 /* Carafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB50BB7E266AA42F00B09F75 /* Build configuration list for PBXNativeTarget "Carafe" */;
+			buildPhases = (
+				EB50BB51266AA42B00B09F75 /* Resources */,
+				EB50BB7D266AA42F00B09F75 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB50BB5A266AA42B00B09F75 /* PBXTargetDependency */,
+			);
+			name = Carafe;
+			productName = Carafe;
+			productReference = EB50BB53266AA42B00B09F75 /* Carafe.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		EB50BB56266AA42B00B09F75 /* Carafe WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB50BB7A266AA42F00B09F75 /* Build configuration list for PBXNativeTarget "Carafe WatchKit App" */;
+			buildPhases = (
+				EB50BB55266AA42B00B09F75 /* Resources */,
+				EB50BB79266AA42F00B09F75 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB50BB66266AA42E00B09F75 /* PBXTargetDependency */,
+			);
+			name = "Carafe WatchKit App";
+			productName = "Carafe WatchKit App";
+			productReference = EB50BB57266AA42B00B09F75 /* Carafe WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EB50BB62266AA42E00B09F75 /* Carafe WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB50BB76266AA42F00B09F75 /* Build configuration list for PBXNativeTarget "Carafe WatchKit Extension" */;
+			buildPhases = (
+				EB50BB5F266AA42E00B09F75 /* Sources */,
+				EB50BB60266AA42E00B09F75 /* Frameworks */,
+				EB50BB61266AA42E00B09F75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Carafe WatchKit Extension";
+			productName = "Carafe WatchKit Extension";
+			productReference = EB50BB63266AA42E00B09F75 /* Carafe WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB50BB4D266AA42B00B09F75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					EB50BB52266AA42B00B09F75 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					EB50BB56266AA42B00B09F75 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					EB50BB62266AA42E00B09F75 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = EB50BB50266AA42B00B09F75 /* Build configuration list for PBXProject "Carafe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB50BB4C266AA42B00B09F75;
+			productRefGroup = EB50BB54266AA42B00B09F75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB50BB52266AA42B00B09F75 /* Carafe */,
+				EB50BB56266AA42B00B09F75 /* Carafe WatchKit App */,
+				EB50BB62266AA42E00B09F75 /* Carafe WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB50BB51266AA42B00B09F75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB50BB55266AA42B00B09F75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB50BB5D266AA42E00B09F75 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB50BB61266AA42E00B09F75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB50BB72266AA42F00B09F75 /* Preview Assets.xcassets in Resources */,
+				EB50BB6F266AA42F00B09F75 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB50BB5F266AA42E00B09F75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB50BB69266AA42E00B09F75 /* ContentView.swift in Sources */,
+				EB50BB6B266AA42E00B09F75 /* CarafeApp.swift in Sources */,
+				EB50BB6D266AA42E00B09F75 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB50BB5A266AA42B00B09F75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB50BB56266AA42B00B09F75 /* Carafe WatchKit App */;
+			targetProxy = EB50BB59266AA42B00B09F75 /* PBXContainerItemProxy */;
+		};
+		EB50BB66266AA42E00B09F75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB50BB62266AA42E00B09F75 /* Carafe WatchKit Extension */;
+			targetProxy = EB50BB65266AA42E00B09F75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EB50BB74266AA42F00B09F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB50BB75266AA42F00B09F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB50BB77266AA42F00B09F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Carafe WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Carafe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleixandre.Carafe.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		EB50BB78266AA42F00B09F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Carafe WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Carafe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleixandre.Carafe.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		EB50BB7B266AA42F00B09F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Carafe_WatchKit_Extension;
+				INFOPLIST_FILE = "Carafe WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleixandre.Carafe.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		EB50BB7C266AA42F00B09F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Carafe_WatchKit_Extension;
+				INFOPLIST_FILE = "Carafe WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleixandre.Carafe.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		EB50BB7F266AA42F00B09F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleixandre.Carafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EB50BB80266AA42F00B09F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleixandre.Carafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB50BB50266AA42B00B09F75 /* Build configuration list for PBXProject "Carafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB50BB74266AA42F00B09F75 /* Debug */,
+				EB50BB75266AA42F00B09F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB50BB76266AA42F00B09F75 /* Build configuration list for PBXNativeTarget "Carafe WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB50BB77266AA42F00B09F75 /* Debug */,
+				EB50BB78266AA42F00B09F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB50BB7A266AA42F00B09F75 /* Build configuration list for PBXNativeTarget "Carafe WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB50BB7B266AA42F00B09F75 /* Debug */,
+				EB50BB7C266AA42F00B09F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB50BB7E266AA42F00B09F75 /* Build configuration list for PBXNativeTarget "Carafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB50BB7F266AA42F00B09F75 /* Debug */,
+				EB50BB80266AA42F00B09F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB50BB4D266AA42B00B09F75 /* Project object */;
+}
