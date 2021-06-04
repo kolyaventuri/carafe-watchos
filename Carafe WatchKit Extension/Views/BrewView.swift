@@ -8,10 +8,30 @@
 import SwiftUI
 
 struct BrewView: View {
-    let method: Method;
+    @State var currentStep: Int = 0
+    let method: Method
+    
+    func nextStep() {
+        if (currentStep + 1 == method.steps.count) {
+            // TODO: Add end screen
+        } else {
+            currentStep += 1
+        }
+    }
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            Text(method.steps[currentStep].description)
+            Spacer()
+            Button(action: {
+                nextStep()
+            }) {
+                Text("Continue")
+            }
+                .padding()
+        }
+        .navigationTitle(method.steps[currentStep].title)
     }
 }
 

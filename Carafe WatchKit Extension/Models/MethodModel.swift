@@ -74,6 +74,14 @@ class MethodModel: ObservableObject {
 extension Method {
     /// A sample topic used in the preview.
     static let previewMethod = Method(title: "Hario v60", emoji: "☕", color: .white, steps: [
-        Step(title: "Dummy", description: "Dummy step")
+        Step(title: "Prep", description: "Grind {weight}g of coffee and place a filter in your v60 brewer."),
+        Step(title: "Rinse", description: "Boil about {volume}ml of water, and rinse the filter."),
+        Step(title: "Wet Grounds", description: "Add {weight}g of coffee to the filter. Create a small well with your finger, {bloomWeight}g of water, and swirl until all grounds are wet.", display: Display.weight),
+        Step(title: "Bloom", description: "Wait for coffee to bloom", timer: Timer.start, timed: true, time: 30, display: Display.weight),
+        Step(title: "First Pour", description: "Pour in water at an even rate", timed: true, time: 30, display: Display.weight),
+        Step(title: "Second Pour", description: "Pour more slowly", timed: true, time: 30, display: Display.weight),
+        Step(title: "Stir + Swirl", description: "Stir once in each direction, and swirl the entire vessel", display: Display.weight),
+        Step(title: "Draw Down", description: "Wait for water to meet top of grounds", display: Display.timer),
+        Step(title: "Enjoy", description: "Discard grounds and enjoy!", timer: Timer.end, display: Display.timer)
     ])
 }
