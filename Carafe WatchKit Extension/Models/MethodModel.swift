@@ -57,9 +57,10 @@ class MethodModel: ObservableObject {
             emoji: "☕",
             color: UIColor.green,
             steps: [
-                Step(title: "Prep", description: "Grind {weight}g of coffee and place a filter in your v60 brewer."),
-                Step(title: "Rinse", description: "Boil about {volume}ml of water, and rinse the filter."),
-                Step(title: "Wet Grounds", description: "Add {weight}g of coffee to the filter. Create a small well with your finger, {bloomWeight}g of water, and swirl until all grounds are wet.", display: Display.weight),
+                Step(title: "Prep", description: "Grind {groundWeight}g of coffee and place a filter in your v60 brewer."),
+                Step(title: "Rinse", description: "Boil about {boilVolume}ml of water, and rinse the filter."),
+                Step(title: "Add Grounds", description: "Add {groundWeight}g of coffee to the filter."),
+                Step(title: "Add Water", description: "Add {bloomWeight}g of water, and swirl", display: Display.weight),
                 Step(title: "Bloom", description: "Wait for coffee to bloom", timer: TimerState.start, timed: true, time: 30, display: Display.weight),
                 Step(title: "First Pour", description: "Pour in water at an even rate", timed: true, time: 30, display: Display.weight),
                 Step(title: "Second Pour", description: "Pour more slowly", timed: true, time: 30, display: Display.weight),
@@ -74,9 +75,10 @@ class MethodModel: ObservableObject {
 extension Method {
     /// A sample topic used in the preview.
     static let previewMethod = Method(title: "Hario v60", emoji: "☕", color: .white, steps: [
-        Step(title: "Prep", description: "Grind {weight}g of coffee and place a filter in your v60 brewer."),
-        Step(title: "Rinse", description: "Boil about {volume}ml of water, and rinse the filter."),
-        Step(title: "Wet Grounds", description: "Add {weight}g of coffee to the filter. Create a small well with your finger, {bloomWeight}g of water, and swirl until all grounds are wet.", display: Display.weight),
+        Step(title: "Prep", description: "Grind {groundWeight}g of coffee and place a filter in your v60 brewer."),
+        Step(title: "Rinse", description: "Boil about {boilVolume}ml of water, and rinse the filter."),
+        Step(title: "Add Grounds", description: "Add {groundWeight}g of coffee to the filter."),
+        Step(title: "Add Water", description: "Add {bloomWeight}g of water, and swirl", display: Display.weight),
         Step(title: "Bloom", description: "Wait for coffee to bloom", timer: TimerState.start, timed: true, time: 5, display: Display.weight),
         Step(title: "First Pour", description: "Pour in water at an even rate", timed: true, time: 5, display: Display.weight),
         Step(title: "Second Pour", description: "Pour more slowly", timed: true, time: 5, display: Display.weight),

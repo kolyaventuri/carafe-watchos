@@ -36,6 +36,10 @@ struct BrewView: View {
     }
     
     func nextStep() {
+        if (currentStep == 0) {
+            currentWeight = Int(Double(totalWeight) * 0.12)
+        }
+
         if (currentStep + 1 == method.steps.count) {
             // TODO: Add end screen
         } else {
@@ -91,6 +95,19 @@ struct BrewView: View {
         }
     }
     
+    var description: String {
+        var desc = step.description
+        let coffeeWeight = Int(Double(totalWeight) * 0.06)
+        desc = desc.replacingOccurrences(of: "{groundWeight}", with: String((coffeeWeight)))
+        desc = desc.replacingOccurrences(of: "{bloomWeight}", with: String((coffeeWeight * 2)))
+
+        let boilVolume = Int(Double(totalWeight) * 1.5)
+
+        desc = desc.replacingOccurrences(of: "{boilVolume}", with: String(boilVolume))
+        
+        return desc
+    }
+    
     var buttonText: String {
         get {
             if (step.timed) {
@@ -102,25 +119,30 @@ struct BrewView: View {
     }
 
     var body: some View {
-        VStack {
-            step.display != Display.none ? Text(header).font(.title2) : nil
-            Spacer()
-            Text(step.description)
-            Spacer()
-            Button(action: {
-                nextStep()
-            }) {
-                Text(buttonText)
+        GeometryReader{g in
+            VStack {
+                step.display != Display.none ? Text(header).font(.title2) : nil
+                Spacer()
+                Text(description)
+                    .font(.system(size: g.size.height > g.size.width ? g.size.width * 0.1: g.size.height * 0.1))
+                Spacer()
+                Button(action: {
+                    nextStep()
+                }) {
+                    Text(buttonText)
+                }
+                    .padding()
+                .disabled(step.timed)
             }
-                .padding()
-            .disabled(step.timed)
+            .navigationTitle(step.title)
         }
-        .navigationTitle(step.title)
     }
 }
 
 struct BrewView_Previews: PreviewProvider {
     static var previews: some View {
-        BrewView(method: Method.previewMethod)
+        Group {
+            BrewView(method: Method.previewMethod)
+        }
     }
 }
