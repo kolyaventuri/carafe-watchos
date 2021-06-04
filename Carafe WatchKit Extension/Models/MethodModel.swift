@@ -48,6 +48,7 @@ struct Step {
     var timed: Bool = false
     var time: Int = 0
     var display: Display = .none
+    var weightFactor: Double = 0.0;
 }
 
 class MethodModel: ObservableObject {
@@ -80,8 +81,8 @@ extension Method {
         Step(title: "Add Grounds", description: "Add {groundWeight}g of coffee to the filter."),
         Step(title: "Add Water", description: "Add {bloomWeight}g of water, and swirl", display: Display.weight),
         Step(title: "Bloom", description: "Wait for coffee to bloom", timer: TimerState.start, timed: true, time: 5, display: Display.weight),
-        Step(title: "First Pour", description: "Pour in water at an even rate", timed: true, time: 5, display: Display.weight),
-        Step(title: "Second Pour", description: "Pour more slowly", timed: true, time: 5, display: Display.weight),
+        Step(title: "First Pour", description: "Pour in water at an even rate", timed: true, time: 30, display: Display.weight, weightFactor: 120 / 250),
+        Step(title: "Second Pour", description: "Pour more slowly", timed: true, time:30, display: Display.weight, weightFactor: 100 / 250),
         Step(title: "Stir + Swirl", description: "Stir once in each direction, and swirl the entire vessel", display: Display.weight),
         Step(title: "Draw Down", description: "Wait for water to meet top of grounds", display: Display.timer),
         Step(title: "Enjoy", description: "Discard grounds and enjoy!", timer: TimerState.end, display: Display.timer)

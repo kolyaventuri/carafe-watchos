@@ -12,7 +12,7 @@ struct BrewView: View {
     let totalWeight: Int = 400
 
     @State var currentStep: Int = 0
-    @State var currentWeight: Int = 0
+    @State var currentWeight: Double = 0.0
 
     @State var seconds: Int = 0
     @State var totalTime: Int = 0
@@ -26,6 +26,10 @@ struct BrewView: View {
     
     func tickCountdown() {
         seconds -= 1;
+        if (step.weightFactor != 0.0 && seconds < step.time) {
+            currentWeight += (Double(totalWeight) * step.weightFactor) / Double(step.time)
+        }
+        
         if (seconds == 0) {
             return nextStep()
         }
@@ -37,7 +41,7 @@ struct BrewView: View {
     
     func nextStep() {
         if (currentStep == 0) {
-            currentWeight = Int(Double(totalWeight) * 0.12)
+            currentWeight = Double(totalWeight) * 0.12
         }
 
         if (currentStep + 1 == method.steps.count) {
@@ -85,7 +89,7 @@ struct BrewView: View {
     var header: String {
         get {
             if (step.display == Display.weight) {
-                return "\(currentWeight)g / \(totalWeight)g"
+                return "\(Int(round(currentWeight)))g / \(totalWeight)g"
             }
             if (step.display == Display.timer) {
                 return time;
