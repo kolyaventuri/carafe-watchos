@@ -17,7 +17,8 @@ struct BrewView: View {
     @State var seconds: Int = 0
     @State var totalTime: Int = 0
     
-    @State var timer: Timer?;
+    @State var timer: Timer?
+    @State var isDone: Bool = false
     
     func startCountdown() {
         seconds = step.time + 1
@@ -45,7 +46,7 @@ struct BrewView: View {
         }
 
         if (currentStep + 1 == method.steps.count) {
-            // TODO: Add end screen
+            isDone = true
         } else {
             currentStep += 1
             if (step.timed) {
@@ -121,7 +122,7 @@ struct BrewView: View {
             return "Continue"
         }
     }
-
+    
     var body: some View {
         GeometryReader{g in
             VStack {
@@ -130,13 +131,24 @@ struct BrewView: View {
                 Text(description)
                     .font(.system(size: g.size.height > g.size.width ? g.size.width * 0.1: g.size.height * 0.1))
                 Spacer()
-                Button(action: {
-                    nextStep()
-                }) {
-                    Text(buttonText)
+                if (isDone) {
+                    (
+                        NavigationLink(destination: HomeView()) {
+                            Text(buttonText)
+                        }
+                            .padding()
+                    )
+                } else {
+                    (
+                        Button(action: {
+                            nextStep()
+                        }) {
+                            Text(buttonText)
+                        }
+                            .disabled(step.timed)
+                            .padding()
+                    )
                 }
-                    .padding()
-                .disabled(step.timed)
             }
             .navigationTitle(step.title)
         }
