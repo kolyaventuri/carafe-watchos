@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB20C852266AAF990084EAFE /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20C851266AAF990084EAFE /* SetupView.swift */; };
+		EB328016266AE1E6000BA1EE /* SizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB328015266AE1E6000BA1EE /* SizeView.swift */; };
 		EB50BB58266AA42B00B09F75 /* Carafe WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EB50BB57266AA42B00B09F75 /* Carafe WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EB50BB5D266AA42E00B09F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB50BB5C266AA42E00B09F75 /* Assets.xcassets */; };
 		EB50BB64266AA42E00B09F75 /* Carafe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB50BB63266AA42E00B09F75 /* Carafe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -64,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		EB20C851266AAF990084EAFE /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		EB328015266AE1E6000BA1EE /* SizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeView.swift; sourceTree = "<group>"; };
 		EB50BB53266AA42B00B09F75 /* Carafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB50BB57266AA42B00B09F75 /* Carafe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carafe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB50BB5C266AA42E00B09F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				EB50BB68266AA42E00B09F75 /* HomeView.swift */,
 				EB20C851266AAF990084EAFE /* SetupView.swift */,
 				EBAE3DD8266AB638006990E0 /* BrewView.swift */,
+				EB328015266AE1E6000BA1EE /* SizeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				EB50BB69266AA42E00B09F75 /* HomeView.swift in Sources */,
 				EB50BB6B266AA42E00B09F75 /* CarafeApp.swift in Sources */,
 				EB20C852266AAF990084EAFE /* SetupView.swift in Sources */,
+				EB328016266AE1E6000BA1EE /* SizeView.swift in Sources */,
 				EBAE3DCE266AB432006990E0 /* MethodModel.swift in Sources */,
 				EBAE3DD9266AB638006990E0 /* BrewView.swift in Sources */,
 				EB50BB6D266AA42E00B09F75 /* ComplicationController.swift in Sources */,

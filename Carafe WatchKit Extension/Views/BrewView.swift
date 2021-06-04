@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BrewView: View {
     let method: Method
-    let totalWeight: Int = 400
+    let totalWeight: Int
 
     @State var currentStep: Int = 0
     @State var currentWeight: Double = 0.0
@@ -158,7 +158,7 @@ struct BrewView: View {
 struct BrewView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            BrewView(method: Method.previewMethod)
+            BrewView(method: Method.previewMethod, totalWeight: 400)
         }
     }
 }

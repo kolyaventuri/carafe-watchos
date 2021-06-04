@@ -13,7 +13,7 @@ struct SetupView: View {
     var body: some View {
         List {
             ForEach(model.methods) { method in
-                NavigationLink(destination: BrewView(method: method)) {
+                NavigationLink(destination: SizeView(method: method)) {
                     MethodCell(method: method)
                         .frame(height: 100.0)
                 }
